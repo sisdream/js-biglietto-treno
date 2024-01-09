@@ -10,7 +10,7 @@ console.log(age);
 
 // Costo del biglietto
 
-let costo = document.getElementById(".costo");
+let price = document.getElementById("costo");
 const costoPerKm = 0.21;
 
 // Biglietto
@@ -18,11 +18,30 @@ const costoPerKm = 0.21;
 let tiket = path * costoPerKm;
 console.log(tiket);
 
-// Sconti 
 
 //Sconto per minori 20%
-let scontoMinori = tiket / 100 * 20;
-console.log(scontoMinori);
+let minorDiscount = tiket / 100 * 20;
+console.log(minorDiscount);
+let minor = tiket - minorDiscount;
+
+
 //Sconto per anziani 40%
-let scontoAnziani = tiket / 100 * 40;
-console.log(scontoAnziani);
+let seniorDiscount = tiket / 100 * 40;
+console.log(seniorDiscount);
+let senior = tiket - seniorDiscount;
+
+// Sconti 
+
+let discountedPrice = 0;
+
+if(age < 18){
+    discountedPrice = minor;
+}else if(age > 65){
+    discountedPrice = senior;
+}else{
+    discountedPrice = tiket;
+};
+
+alert (`il prezzo scontato è di ${discountedPrice.toFixed(2)} €`)
+price.innerHTML = "il prezzo è di: " + discountedPrice.toFixed(2) + "€";
+
