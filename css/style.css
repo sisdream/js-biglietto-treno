@@ -3,3 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.card{
+    width: 800px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 100px auto;
+    display: flex;
+}
+
+.left,
+.right{
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.left{
+    width: 300px;
+    background-color: rgb(83, 128, 129);
+}
+
+.right{
+    width: 500px;
+    background-color: rgb(95, 158, 160);
+}
+
