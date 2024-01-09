@@ -6,7 +6,7 @@
 
 .card{
     width: 800px;
-    height: 200px;
+    height: 250px;
     border-radius: 15px;
     margin: 100px auto;
     display: flex;
@@ -24,8 +24,16 @@
     background-color: rgb(83, 128, 129);
 }
 
+.image img{
+    width: 180px;
+}
+
+
 .right{
     width: 500px;
     background-color: rgb(95, 158, 160);
 }
 
+p{
+    font-size: 1.3rem;
+}
